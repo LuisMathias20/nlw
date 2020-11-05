@@ -2,7 +2,7 @@
   "name": "nlw",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon src/server.js"
   },
@@ -25,5 +25,4 @@
     "hbs": "^4.1.1",
     "nodemon": "^2.0.6"
   }
-  
 }
