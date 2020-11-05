@@ -10,13 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/LuisMathias20/nlw.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["heroku"],
+  "author": "LuisMathias20",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/LuisMathias20/nlw/issues"
   },
   "homepage": "https://github.com/LuisMathias20/nlw#readme",
+  "engines": {
+    "node": "15.0.1"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
