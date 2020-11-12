@@ -10,7 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/LuisMathias20/nlw.git"
   },
-  "keywords": ["heroku"],
+  "keywords": [
+    "heroku"
+  ],
   "author": "LuisMathias20",
   "license": "ISC",
   "bugs": {
@@ -23,6 +25,9 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "nodemon": "^2.0.6"
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "sqlite": "^4.0.15",
+    "sqlite3": "^5.0.0"
   }
 }
