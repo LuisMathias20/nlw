@@ -1,29 +1,20 @@
-const mysql = require('mysql');
-const { orphanages } = require('../pages');
+const Database = require('sqlite-async');
 
-const con = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'XMNxmn!@#123',
-    database: 'happy_database'
-});
-
-con.connect(function(err) {
-    if(err) throw err;
-    console.log("connected");
-});
-
-function conexao() {
-    const conn = new mysql.createConnection(con);
-    return conn;
+function execute(db) {
+    return db.exec(`
+        CREATE TABLE IF NOT EXISTS orphanages (
+            orp_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            orp_lat TEXT,
+            orp_lng TEXT,
+            orp_name TEXT,
+            orp_about TEXT,
+            orp_whatsapp TEXT,
+            orp_images TEXT,
+            orp_instructions TEXT,
+            orp_opening_hours TEXT,
+            orp_open_on_weekends TEXT
+        );
+    `)
 }
 
-/*
-SELECT FROM DATABASE
-function selectAll(table) {
-    con.query("SELECT * FROM "+table, function(err, result, fields) {
-        if(err) throw err;
-        console.log(result);
-    });
-}
-*/
+module.exports = Database.open(__dirname+'/database.sqlite').then(execute);
