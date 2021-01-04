@@ -1,0 +1,34 @@
+{
+  "name": "nlw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuisMathias20/nlw.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "LuisMathias20",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuisMathias20/nlw/issues"
+  },
+  "homepage": "https://github.com/LuisMathias20/nlw#readme",
+  "engines": {
+    "node": "15.0.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.6",
+    "sqlite": "^4.0.15",
+    "sqlite-async": "^1.1.1",
+    "sqlite3": "^5.0.0"
+  }
+}
