@@ -25,13 +25,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "mysql": "^2.18.1",
     "nodemon": "^2.0.6",
-<<<<<<< HEAD
-    "sqlite": "^4.0.15",
-    "sqlite3": "^5.0.0"
-=======
     "sqlite-async": "^1.1.1"
->>>>>>> origin
   }
 }
