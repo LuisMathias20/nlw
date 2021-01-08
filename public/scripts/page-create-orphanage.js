@@ -78,3 +78,12 @@ function toggleSelect(event) {
 
     input.value = button.dataset.value;
 }
+
+function validate(event) {
+
+    if(Object.values(event).includes('')){
+        event.preventDefault();
+        alert('Preencha a latitude e longitude no mapa');
+    }
+    
+}

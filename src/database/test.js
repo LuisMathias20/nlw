@@ -19,11 +19,9 @@ Database.then(async db => {
 
     /* read data in the table */
     const selectedOrphanages = await db.all("SELECT * FROM orphanages");
-    console.log(selectedOrphanages);
 
     /* select a specific data from db */
     const orphanage = await db.all('SELECT * FROM orphanages WHERE orp_id = "1"');
-    console.log(orphanage);
 
     /* delete data from table */
     console.log(await db.run("DELETE FROM orphanages WHERE orp_id = '4'"));
